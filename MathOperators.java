@@ -1,23 +1,34 @@
 public class MathOperators {
 
     public static void main(String[] args) {
+        // extended assignment operators
+        int x = 12;
+        x += 5;   // x = x + 5
+        System.out.println("x is now " + x);
 
-        // A village chief wants to share the money in her piggy bank
-        // saved over a few decades among the elderly people in her village.
-        // She decided that each elderly person will receive $28.88 in ang pow
-        // Any remainder will be spent on drinks
-        // She broke her piggy bank and found she had $34,567.89.
-        // How many elderly people can she give?
-        // How much will be left over?
+        int y = 10;
+        y /= 2;    // y = y / 2;
+        System.out.println("y is now " + y);
 
-        double totalMoney = 34567.89;
-        double moneyPerPerson = 28.88;
+        // increment / decrement operators
+        int a = 6;
+        a++;
+        System.out.println("a is now " + a);  // a will be 7
+        int b = 20;
+        b--;
+        System.out.println("b is now " + b);  // b is now 19
 
-        int numberOfAngPows = (int)(totalMoney / moneyPerPerson);
-        double remainder = totalMoney % moneyPerPerson;
+        // Math methods
+        int m = Math.abs(-9);    // m will contain 9
+        double n = Math.abs(-10.5);   // n will contain 10.5
+        System.out.println("m will contain " + m);
+        System.out.println("n will contain " + n);
 
-        System.out.printf("Number of elderly beneficiaries: %d.\n", numberOfAngPows);
-        System.out.printf("Money remaining: $%.2f\n", remainder);
+        double result = Math.sqrt(81);
+        System.out.println("Sqrt of 81 will be " + result);
+
+        int biggerNumber = Math.max(50, 30);
+        System.out.println("Bigger number between 50 and 30 is: " + biggerNumber);
 
     }
 }
